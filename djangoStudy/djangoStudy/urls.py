@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from teacher import views as tv
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^normalmap/', tv.do_normalmap),
+    #url(r'^admin/', include(admin.site.urls)),
 ]

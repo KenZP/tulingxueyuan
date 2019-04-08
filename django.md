@@ -33,5 +33,31 @@
   - 在接受URL请求的匹配上使用了RE
   - URL的具体格式如urls.py所示
 
+- url匹配规则
+  - 从上往下一个一个比对
+  - url格式是分级格式，则按照级别一级一级往下比对，主要对应url包含子url的情况
+  - 子url一旦被调用，则不返回到主url
+    - `/one/two/three`
+  - 正则以r开头，表示不需要转义，注意尖号（^）从以某个字母开头和美元符号（$）以某个结束
+    - `/one/two/three` 配对 r'^one/
+    - `/oo/one/two/three` 不配对 r'^one/
+    - `/one/two/three` 配对r'three/$
+    - `/oo/one/two/three/oo/` 不配对 r'three/$
+    - 开头不需要有反斜杠
+  - 如果从上向下都没有找到合适的匹配内容，则报错
+
+# 正常映射
+- 把某一个符合RE的URL映射到某事物处理函数中去
+  - 举例如下
+  '''
+  from showeast import views as sv
+  
+  urlpatterns = [
+      url(r'^admin/',admin.site.urls),
+      url(r'^normalmap/',sv.normalmap),
+  ]
+  
+  '''
+
   
   
