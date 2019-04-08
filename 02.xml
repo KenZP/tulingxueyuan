@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--根元素school-->
+<school type="online" loc="hefei" xmlns:student="http://my_student" xmlns:room="http://my_room">	
+		<!--子元素-->
+		<student:name>haha</student:name>
+		<age>18</age>
+		<room:name>2014</room:name>
+</school>

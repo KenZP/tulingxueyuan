@@ -1,0 +1,122 @@
+# 页面解析和数据提取
+  - 结构数据：现有结构，再谈数据
+    - JSON文件
+      - JSON Path
+      - 转化为python类型进行操作（json类）
+    - XML文件
+      - 转化为python类型（xmltodict）
+      - XPath
+      - CSS选择器
+      - 正则
+  - 非结构化数据：先有数据再谈结构
+    - 文本
+    - 电话号码
+    - 邮箱地址
+      - 通常处理此类数据，使用正则表达式
+    - Html文件
+      - 正则
+      - Xpath
+      - CSS选择器
+
+  # 正则表达式
+    - 一套规则，可以再字符串文本中进行搜查替换等
+    - 案例Re01.py，re的基本使用流程
+    - 案例match01.py，match的基本使用
+    - 正则常用方法
+      - match：从开始位置查找，一次匹配
+      - search：从任何位置查找，一次匹配，案例searchv01.py
+      - findall：全部匹配，返回列表 案例searchall01.py
+      - finditer：全部匹配，返回迭代器,案例searchall01.py
+      - split：分割字符串，返回列表
+      - sub：替换
+
+    - 匹配中文
+      - 中文unicode范围主要在[u4e00-u9fa5]
+      - 案例v27.py
+    - 贪婪和非贪婪
+      - 贪婪模式：在整个表达式匹配成功的前提下，尽可能多的匹配
+      - 非贪婪模式：在整个表达式匹配成功的前提下，尽可能少的匹配
+      - python里面默认是贪婪模式
+      - 例如：
+        - 查找文本abbbbbbccc
+        - re是ab*
+        - 贪婪模式：结果是abbbbbb
+        - 非贪婪模式：结果是a
+  - xml
+    - 概念：父节点，子节点，先辈节点，兄弟节点，后代节点
+
+  - XPath
+    - 是一门在XML文档中查找信息的语言
+    - XPath开发工具
+      - 开源的XPath表达式：XMLQuire
+      - chrome插件：Xpath Helper
+      - firefox插件：Xpath Checker
+
+  - lxml
+    - python的 HTML/xml的解析器模块
+    - 功能
+      - 解析HTML，案例lxml01.py
+      - 文件读取，案例lxml02.py
+      - etree和xpath配合使用，案例lxml03.py
+
+# CSS选择器  BeautifulSoup4
+- 现在使用BeautifulSoup4
+- 官方文档
+- 几个常用提取信息工具的比较
+  - 正则：很快，不好用，不用安装
+  - beautifulsoup：慢，使用简单，安装简单
+  - lxml：比较快，使用简单，安装一般
+- 四大对象
+  - Tag
+  - NavigableString
+  - BeautifulSoup
+  - Comment
+- Tag
+  - 对应html中的标签
+  - 可以通过soup.tag_name
+    - print(soup.link)
+  - tag两个重要属性
+    - name
+      - print(soup.link.name)
+    - attrs
+      - print(soup.link.attrs)
+      - print(soup.link.attrs['type'])
+  - 案例bs_tag.py
+
+- NavigableString
+  - 对应内容值
+    - print(soup.title.string)
+
+- BeautifulSoup
+  - 表示的是一个文档的内容，大部分可以把它看作tag对象
+  - 一般我们可以用soup来表示
+- Comment
+  - 特殊类型的NavigableString对象
+  - 对其输出，则内容不包含注释符号
+
+- 遍历文档对象
+  - contents： tag的子节点以列表的方式给出
+  - children：子节点以迭代器形式返回
+  - descendants：所有孙节点
+  - string：
+  - 案例bs02.py
+- 搜索文档对象
+  - find_all(name,attrs,recursive,text,**kwargs)
+    - name:按照那个字符串搜索，可以传入内容为
+      - 字符串
+      - 正则表达式
+      - 列表
+    - keyword参数：可以用来表示参数
+    - text： 对应tag的文本值
+    - 案例bs03.py
+
+- css选择器
+  - 使用soup.select，返回一个列表
+  - 通过标签名称：soup.select("title")
+  - 通过类名：soup.select(".content")
+  - id查找：soup.select("#name_id")
+  - 组合查找：soup.select("div #input_content")
+  - 属性查找：soup.select("img[class='photo']")
+  - 获取内容: tag.get_text
+  - 案例bs04.py
+

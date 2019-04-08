@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<School>
+	<Teacher desc="Python Teacher" score="good">
+		<name>ZhangKen</name>
+		<age detaile="age for years 2010">18</age>
+		<mobile>123456879</mobile>
+	</Teacher>
+
+	<Student>
+		<Name Other="他是班长">ZhangSan</Name>
+		<Age Detaile="the yongest boy in class">14</Age>
+	</Student>
+
+	<Student>
+		<Name>LiSi</Name>
+		<Age>19</Age>
+		<Mobile>4521548452</Mobile>
+	</Student>
+	<!--例子-->
+</School>
