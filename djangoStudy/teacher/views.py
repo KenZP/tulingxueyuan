@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 # views function need a request
 def do_normalmap(request):
-    return HttpResponse("This is a normalmap")
+    return HttpResponse("Hello Django")
