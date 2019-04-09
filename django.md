@@ -59,6 +59,34 @@
   
   '''
 # URL带参数映射
+- 在事件处理代码中需要由URL传入参数，形如/myurl/param中的param
+- 参数都是字符串形式，如果需要整数等形式需要自行转换
+- 通常的形式如下
+    /search/page/432 中的432需要经转化。
 
-  
-  
+# URL在APP中处理
+- 如果所有应用URL都集中在urls.py中，可能导致文件的臃肿
+- 可以把urls具体功能逐渐分散到每个app中
+  - 从Django.conf.urls导入include模块
+  - 注意此时RE部分的写法
+  - 添加include导入
+- 使用方法
+  - 确保include被导入
+  - 写主路由的开头url
+  - 写子路由
+  - 编写views函数
+
+- 同样可以使用参数  
+# URL中的嵌套参数
+- 捕获某个参数的一部分
+  - 例如URL /index/page-3,需要捕获数字3作为参数
+      url(r'index_1/(page-(\d+)/)?$,sv.myindex_1) #不太好
+      url(r'index_2/(?:page-(?P<page_number>\d+)/)?$,sv.myindex_2),
+  - 上述例子会得到两个参数，但?:表明忽略此参数，?P表示后面是参数
+
+# 传递额外参数
+- 参数不仅仅来自URL，还可能是我们自己定义的内容
+  url(r'extrem/$',sv.extremParam,{'name':"liuying"})
+- 附件参数同样适用于include语句，此时对include内所有都添加
+
+# 
