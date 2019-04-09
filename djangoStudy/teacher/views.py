@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from django.core.urlresolvers import reverse
 # Create your views here.
 # views function need a request
 def do_normalmap(request):
@@ -18,3 +18,5 @@ def do_param2(r,pn):
 
 def extremParam(r,name):
 	return HttpResponse("My name is {0}".format(name))
+def revParse(r):
+	return HttpResponse("Your requested URL is {0}".format(reverse("askname")))

@@ -89,4 +89,7 @@
   url(r'extrem/$',sv.extremParam,{'name':"liuying"})
 - 附件参数同样适用于include语句，此时对include内所有都添加
 
-# 
+# URL的反向解析
+- 防止硬编码
+- 本质上是对每一个URL进行命名
+- 以后再编码代码中使用URL的值，原则上都应该使用反向解析

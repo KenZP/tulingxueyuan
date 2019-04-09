@@ -25,5 +25,8 @@ urlpatterns = [
     url(r'^teacher/', include(teacher_urls)),
     url(r'^book/(?:page-(?P<pn>\d+)/)$', tv.do_param2),
     url(r'^yourname/$',tv.extremParam,{"name":"liuying"}),
-    #url(r'^withparam/(?P<year>[0-9]{4})/(?P<month>[0,1][0-9])', tv.withparam),
+    url(r'^withparam/(?P<year>[0-9]{4})/(?P<month>[0,1][0-9])', tv.withparam),
+    url(r'^yourname1/$',tv.revParse,name="askname"),
+
+
 ]
