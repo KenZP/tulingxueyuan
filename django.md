@@ -139,5 +139,50 @@
            return HttpResponse("this is v11 return")   
     
     '''
+# Request对象
+- Request介绍
+  - 服务器接收到http协议的请求后，会根据报文创建HttpRequest对象
+  - 视图函数的第一个参数就是HttpRequest对象
+  - 在Django.http模块中定义了HttpRequest对象的API
+- 属性
+  - 下面除非特别说明，属性都只是可读的
+  - path： 一个字符串，表示请求的页面的完整路径，不包含域名
+  - method：一个字符串，表示请求使用HTTP方法，常用值包括： "GET" "POST"
+  - encoding：一个字符串，表示提交的数据的默认编码方式
+    - 如果为None，则表示使用浏览器的默认设置，一般为utf-8
+    - 这个属性是可写的，可以通过修改它来修改访问表单数据使用的编码方式
+  - GET：一个类似于字典的对象，包含get请求方式的所有参数
+  - PSOT：一个类似于字典的对象，包含post请求方式的所有参数
+  - FILES：一个类似于字典的对象，包含所有的上传文件
+  - COOKIES：一个标准的Python字典，包含所有的cookie，键和值都为字符串
+  - session：一个即可读又可写的类似于字典的对象，表示当前的会话，只有当Django启用会话的支持时才可用，详细内容见“状态保持”
+- 方法
+  - is_ajax(): 如果请求时通过XMLHttpRequest发起的，则返回True
+- QueryDict对象
+  - 定义在django.http.QueryDict
+  - request对象的属性GET、POST都是QueryDict类型对象
+  - 与Python字典不同，QueryDict类型的对象用来处理同一个键带有多个值的情况
+  - 方法get():根据键获取值
+    - 只能获取键的一个值
+    - 如果一个键同时拥有多个值，湖区最后一个值
+  - 方法getlist():根据键获取值
+    - 将键的值以列表返回，可以获取一个键的多个值
+- GET属性
+  - QueryDict类型对象
+  - 包含get请求方式的所有参数
+  - 与url请求地址中的参数对应，位于?后面
+  - 参数的格式时键值对，如key1=value1
+  - 多个参数之间，使用&连接，如key1=value1&key2=value2
+  - 键是开发人员定下来的，值是可变的
+  - 案例showviews/views/v8_get
 
-  
+- POST属性
+  - QueryDict类型对象
+  - 包含post请求方式的所有参数
+  - 与form表单中的空间对应
+  - 表单中空间必须又name属性，那么为键，value为值
+    - checkbox存在一键多值的问题
+  - 键是开发人员定下来的，值是可变的
+  - 案例showviews/views/v9_post
+    - setting中设置模板位置（已经设置完毕）
+    - 设置get页面的urls和函数
