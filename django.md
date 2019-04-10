@@ -93,3 +93,51 @@
 - 防止硬编码
 - 本质上是对每一个URL进行命名
 - 以后再编码代码中使用URL的值，原则上都应该使用反向解析
+
+# views 视图
+# 视图概述
+- 视图即视图函数，接受web请求并返回web响应的事件处理函数
+- 响应指符合http协议要求的任何内容，包括json，string，html等
+- 本章忽略事务处理，重点再如何返回处理结果上
+
+# 其他简单视图
+- django.http给我们提供类很多和HttpResponse类似的简单视图，通过django查看django.http代码我们知道
+- 此类视图使用方法基本类似，可以通过return语句直接反馈返回给浏览器
+- Http404为Exception子类，所以需要raise使用
+# HttpResponse详解
+- 方法
+  - init：使用页内容实例化HttpResponse对象
+  - write(content):以文件的方式写入
+  - flush()：以文件的方式输出缓存区
+  - set_cookie(key,value='',max_age=None,expires=None):设置Cookie
+    - key,value都是字符串类型
+    - max_age是一个整数，表示在指定秒数后过期
+    - expires是一个datetime或timedelta对象，会话将在这个指定的日期/时间过期
+    - max_age与expires二选一
+    - 如果不指定过期时间，则两个星期后过期
+  - delete_cookie(key)：删除指定key的Cookie，如果key不存在则什么也不发生
+  
+# HttpResponseRedirect
+- 重定向，服务器端跳转
+- 构造函数的第一个参数用来指定重定向的地址
+- 案例 ShowViews/views.py
+    '''python
+       # 在east/urls中添加以下内容
+       url(r'^v10_1/',views.v10_1),
+       url(r'^v10_2/',views.v10_2),
+       url(r'^v11/',views.v11,name="v11"),
+    '''
+    '''python
+       #在east/showviews/views中添加以下内容
+       def v10_1(request):
+           return HttpResponseRedirect("/v11")
+           
+       def v10_2(request):
+           return HttpResponseRedirect(reverse("v11"))
+           
+       def v11(request):
+           return HttpResponse("this is v11 return")   
+    
+    '''
+
+  
