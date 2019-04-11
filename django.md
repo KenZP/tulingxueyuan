@@ -186,3 +186,167 @@
   - 案例showviews/views/v9_post
     - setting中设置模板位置（已经设置完毕）
     - 设置get页面的urls和函数
+
+- 手动编写视图
+  - 实验目的：
+    - 利用Django快捷函数手动编写视图处理函数
+    - 编写过程中理解视图运行原理     
+  - 分析
+    - django把所有请求信息封装入request
+    - django通过urls模板把相应请求功跟事件函数处理链接起来，并把request作为参数传入
+    - 在相应的处理函数中，我们需要完成两部分
+      - 处理业务
+      - 把结果封装并返回，我们可以使用简单HttpResponse，同样也可以自己处理此功能
+    - 本案例不介绍业务处理，把目光集中在如何渲染结果并返回
+  - render(request,template_name,context,context_instance,context_type)
+    - 使用模板和一个给定的上下文环境，返回一个渲染和HttpResponse
+    - request：django的传入请求
+    - template_name：模板名称
+    - context_instance：上下文环境
+    - 案例参看代码 teacher_views/views/render_test
+
+  - render_to_response
+    - 根据给定的上下文字典渲染给定模板，返回渲染后的HttpResponse
+  
+  - 系统内建视图
+    - 系统内建视图，可以直接使用
+    - 404
+      - defaults.page_not_found(request,template_name="404.html")
+      - 系统引发Http404时触发
+      - 默认传进request_path变量给模板，即导致错误的URL
+      - DEBUG=True则不会调用404，取而代之是调试信息
+      - 404视图会被传递一个requestContext对象并且可以访问模板上下文处理器提供的变量
+
+    - 500(server error)
+      - default.server_error(request,template_name='500.html')
+      - 需要DEBUG=False，否则不调用
+    - 403（http forbidden）
+      - default.permission_denied(request,template_name='403.html')
+      - 通过PermissionDenied触发
+    - 400（bad request）视图
+      - default.bad_request(request,template_name='404.html')
+      - DEBUG=False
+
+# 基于类的视图
+- 和基于函数的视图的优势和区别：
+  - HTTP方法的method可以有各自的方法，不需要使用条件分支来解决
+  - 可以使用OOP技术（例如Mixin）
+- 概述
+  - 核心是允许使用不同的实例方法来响应不同的HTTP请求方法，而避开条件分支实现
+  - as_view函数作为类的可调用入库，该方法创建一个实例并调用dispatch方法，按照请求方法
+  方法没有定义，则引发HttpResponseNotAllowed
+- 类属性使用
+  - 在类定义时直接覆盖
+  - 在调用as_view的时候直接作为参数使用，例如:
+      '''
+      urlpatterns = [
+          url(r'^about/',GreetingView.as_view(greeting="G'day'")),
+
+          ]
+      '''
+- 对基于类的视图的扩充大致有三种方法：Mixin，装饰as_view，装饰dispatch
+- 使用Mixin
+  - 多继承的一种形式，来自父类的行为和属性组合在一起
+  - 解决多继承问题
+  - View的子类只能单继承，多继承会导致不可期问题
+  - 多继承带来的问题
+    - 结构复杂
+    - 优先顺序模糊
+    - 功能冲突
+  - 解决方法
+    - 规格继承 - java interface
+    - 实现继承 - Python，ruby
+- 在URLconf中装饰
+    '''
+    from django.contrib.auth.decorators import login_required,permission_required
+    from django.views.generic import TemplateView
+
+    from .views import VoteView
+
+    urlpatterns = [
+          url(r'^about/',login_required(TemplateView.as_view(template))),
+          url(r'^about/',permission_required('polls.can_vote')(VoteView),
+          ]
+    '''
+
+- 装饰器
+  - 类的方法和独立方法不同，不能直接运用装饰器，需要method_decorator
+
+      '''
+      from django.contrib.auth.decorators import login_required,permission_required
+      from django.utils.decorators import method_decorator
+      from django.views.generic import TemplateView
+
+      class ProtectedView(TemplateView):
+          template_name = 'secret.html'
+
+          @method_decorator(login_required)
+          def dispatch(self,*args,**kwargs):
+            return supper(ProtectedView,self).dispatch(*args,**kwargs)
+      '''
+# Models 模型
+- ORM
+  - ObjectRelationMap:把面向对象思想转化成关系数据库思想，操作上把类等价于表格
+  - 类对应表格
+  - 类中的属性对应表中的字段
+  - 在应用中的model.py文件中定义class
+  - 所有需要使用ORM的class都必须是model.Model的子类
+  - class中的所有属性对应表格中的字段
+  - 字段的类型都必须用models.xxx 不能使用Python中的类型
+  - 在django中，Models负责跟数据库交互
+- django链接数据库问题
+  - 自带默认数据库Sqllite3
+    - 关系型数据库
+    - 轻量级
+  - 建议开发使用sqllite3，部署用mysql之类的数据库
+	  - 切换数据库在setting中进行设置
+	      
+	      #django链接mysql
+	      DATABASES = [
+	        'default' = {
+	          'ENGINE':'django.db.backends.mysql'
+	          'NAME':'数据库名'
+	          'PASSWORD':'数据库密码'
+	          'HOST':'127.0.0.1'
+	          'PORT':'3306'
+	        }
+	      ]
+
+	      
+	  - 需要在项目文件下的__init__文件导入pymysql包
+	      # 在主项目的__init__文件中
+	      
+	      import pymysql
+	      pymysql.install_as_MySQLdb()
+
+# models类的使用
+- 定义和数据库表映射的类
+  - 在应用中的models.py文件中定义class
+  - 所有需要使用ORM的class都必须是models.Model的子类
+  - class中的所有属性对应表格中的字段
+  - 字段的类型都必须使用models.xxx  不能使用python中的类型
+
+- 字段常用参数
+  1.max_length:规定数值的最大长度
+  2.blank:是否允许字段为空，默认不允许
+  3.null:在DB中控制是否保存为null，默认是false
+  4.default:默认值
+  5.unique:唯一
+  6.verbose_name:假名
+
+- 数据库的迁移
+  1. 在命令行中，生成数据迁移的语句（生成sql语句）
+	  python manage.py makemigrations
+
+	    
+  2. 在命令行中，输入数据库迁移的指令
+	  python manage.py migrate
+	    
+	  ps: 如果迁移中出现没有变化或者报错，可以尝试强制迁移
+	    
+	  # 强制迁移命令
+	    python manage.py makemigrations 应用名
+	    python manage.py migrate 应用名
+
+
+  3. 对于默认数据库，为了避免出现混乱，如果数据库中没有数据，可以把自带的sqllite3数据库删除
