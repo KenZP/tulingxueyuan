@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c944cfca-464d-4d00-9e4a-2961ae4f63b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tulingxueyuan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tulingxueyuan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django.md" beforeDir="false" afterPath="$PROJECT_DIR$/django.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_views/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/django_views/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_views/teacher_views/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_views/teacher_views/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +19,18 @@
           <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="md" value="3" />
+          <entry key="txt" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="5" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -32,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/django.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="438">
-                <caret line="391" column="23" lean-forward="true" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
+              <first_editor relative-caret-position="504">
+                <caret line="394" column="6" selection-start-line="394" selection-start-column="6" selection-end-line="394" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -100,8 +107,8 @@
         <option value="$PROJECT_DIR$/django_views/templates/render2.html" />
         <option value="$PROJECT_DIR$/django_views/django_views/urls.py" />
         <option value="$PROJECT_DIR$/django_views/teacher_views/views.py" />
-        <option value="$PROJECT_DIR$/django.md" />
         <option value="$PROJECT_DIR$/django_views/teacher_views/models.py" />
+        <option value="$PROJECT_DIR$/django.md" />
       </list>
     </option>
   </component>
@@ -346,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555037203650</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update django models db study 0415">
+      <created>1555314626223</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555314626224</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -354,6 +368,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.15476191" />
@@ -402,7 +417,8 @@
     <MESSAGE value="0410 update django study views" />
     <MESSAGE value="update django views study" />
     <MESSAGE value="update django models db study" />
-    <option name="LAST_COMMIT_MESSAGE" value="update django models db study" />
+    <MESSAGE value="update django models db study 0415" />
+    <option name="LAST_COMMIT_MESSAGE" value="update django models db study 0415" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tulingxueyuan$match01.coverage" NAME="match01 Coverage Results" MODIFIED="1554990816155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_views" />
@@ -556,8 +572,8 @@
     <entry file="file://$PROJECT_DIR$/django.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="438">
-            <caret line="391" column="23" lean-forward="true" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
+          <first_editor relative-caret-position="504">
+            <caret line="394" column="6" selection-start-line="394" selection-start-column="6" selection-end-line="394" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
