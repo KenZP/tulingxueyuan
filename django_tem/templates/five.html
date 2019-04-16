@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>five</title>
+</head>
+<body>
+	<form action="/five_post/" method="post">
+		{% csrf_token %}
+		用户名：<input type="text" placeholder="请输入用户名" name="username">
+		<br>
+		密码：<input type="password" name="password">
+		<br>
+		<input type="submit" value="提交">
+	</form>
+
+</body>
+</html>

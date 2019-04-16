@@ -2,6 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c944cfca-464d-4d00-9e4a-2961ae4f63b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/django_tem/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/django_tem/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/django_tem/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/django_tem/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/django_tem/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/mytpl/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/mytpl/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/mytpl/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/mytpl/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/mytpl/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/mytpl/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/templates/five.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/templates/four.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/templates/one.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/templates/three.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tem/templates/two.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django.md" beforeDir="false" afterPath="$PROJECT_DIR$/django.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,26 +39,40 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="354" />
           <entry key="md" value="11" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="354" />
           <entry key="Markdown" value="11" />
           <entry key="PLAIN_TEXT" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="6" />
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="6" />
+          <entry key="Python" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-288">
-                <caret line="436" column="19" lean-forward="true" selection-start-line="436" selection-start-column="19" selection-end-line="436" selection-end-column="19" />
+              <first_editor relative-caret-position="394">
+                <caret line="470" column="21" selection-start-line="470" selection-start-column="21" selection-end-line="470" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -48,31 +80,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_views/django_views/settings.py">
+        <entry file="file://$PROJECT_DIR$/django_tem/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+            <state relative-caret-position="198">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_views/teacher_views/models.py">
+        <entry file="file://$PROJECT_DIR$/django_tem/templates/one.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_tem/templates/two.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_views/teacher_views/views.py">
+        <entry file="file://$PROJECT_DIR$/django_tem/templates/three.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding>
-                <element signature="e#0#55#0" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_tem/templates/four.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/django_tem/templates/five.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -109,6 +175,11 @@
         <option value="$PROJECT_DIR$/django_views/teacher_views/views.py" />
         <option value="$PROJECT_DIR$/django_views/teacher_views/models.py" />
         <option value="$PROJECT_DIR$/django.md" />
+        <option value="$PROJECT_DIR$/django_tem/templates/one.html" />
+        <option value="$PROJECT_DIR$/django_tem/templates/two.html" />
+        <option value="$PROJECT_DIR$/django_tem/templates/three.html" />
+        <option value="$PROJECT_DIR$/django_tem/templates/four.html" />
+        <option value="$PROJECT_DIR$/django_tem/templates/five.html" />
       </list>
     </option>
   </component>
@@ -133,31 +204,12 @@
             <path>
               <item name="tulingxueyuan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tulingxueyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="django_views" type="462c0819:PsiDirectoryNode" />
+              <item name="django_tem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tulingxueyuan" type="b2602c69:ProjectViewProjectNode" />
               <item name="tulingxueyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="django_views" type="462c0819:PsiDirectoryNode" />
-              <item name="django_views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tulingxueyuan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tulingxueyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="django_views" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher_views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tulingxueyuan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tulingxueyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="django_views" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher_views" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tulingxueyuan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tulingxueyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="django_views" type="462c0819:PsiDirectoryNode" />
+              <item name="django_tem" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -171,7 +223,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/django_views/manage.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/django_tem/manage.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -217,12 +269,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/django_views" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/django_tem" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/django_views/manage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/django_tem/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -367,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555314756468</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update django models db study 0415">
+      <created>1555322482285</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555322482285</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -382,7 +441,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32741934" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32419354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -579,10 +638,62 @@
     <entry file="file://$PROJECT_DIR$/django.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-288">
-            <caret line="436" column="19" lean-forward="true" selection-start-line="436" selection-start-column="19" selection-end-line="436" selection-end-column="19" />
+          <first_editor relative-caret-position="394">
+            <caret line="470" column="21" selection-start-line="470" selection-start-column="21" selection-end-line="470" selection-end-column="21" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_tem/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_tem/templates/one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_tem/templates/two.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_tem/templates/three.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_tem/templates/four.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_tem/templates/five.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
