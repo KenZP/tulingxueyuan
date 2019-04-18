@@ -534,8 +534,45 @@ ps:注意点，对ORM的操作分为静态函数和非静态函数两种，静�
 
 
 # admin
--  
+# 创建Admin
+- setting中填入app
+- 打开urls.py
+- 创建超级用户
+- 配置setting文件
 
+# 绑定管理模型
+    from myadmin.models import *
+    
+	admin.site.register(ClassRoom)
+	admin.site.register(Teacher)
+	admin.site.register(Student)
+
+
+# 设置admin管理类
+- 实现方法
+ - ModelAdmin
+ - 装饰器
+- 修改页面显示数量： list_per_page
+- 操作选项：actions_on_top/bottom
+- 控制列表中显示的内容： list_display=[]
+- 将方法作为列显示
+  - 函数必须返回值
+  - 设置short_description作为显示内容
+  - 排序使用admin_order_field
+- 关联对象
+  - 使用方法
+
+- 右侧过滤器
+
+- 搜索框
+    search_fields = ["name"]# 按什么搜索的搜索框
+    
+- 分组显示
+    fieldsets = (
+		("基本信息", {"fields":["name",]}),
+		("其他信息", {"fields":["room","course"]}),
+
+		)
 
 # RESTful
 
