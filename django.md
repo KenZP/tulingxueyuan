@@ -566,7 +566,7 @@ ps:注意点，对ORM的操作分为静态函数和非静态函数两种，静�
 
 - 搜索框
     search_fields = ["name"]# 按什么搜索的搜索框
-    
+
 - 分组显示
     fieldsets = (
 		("基本信息", {"fields":["name",]}),
@@ -574,6 +574,30 @@ ps:注意点，对ORM的操作分为静态函数和非静态函数两种，静�
 
 		)
 
-# RESTful
+
+# Django REST Framework
+# 1. REST
+- 前后端分离
+- API-ApplicationProgrammingInterface
+  - 为了应付千变万化的前端需求
+- REST: RepresationsStateTrans
+  - 20000 Fieding博士提出
+  - RESTful：遵守REST规范的技术设计的软件可以称为RESTful
+- REST规范
+  - URL代表一类资源，一个资源应该是一个名词
+  - 动作有HTTP的method方法提供
+  - URL应该包含版本信息，版本信息也可以放在HTTP协议中
+  - 过滤信息，使用URL的参数代表过滤
+  - 返回值： 每一个返回代码都有具体特定含义
+  - 返回格式： 推荐固定具体格式
+
+- DjangoRestFramework（DRF）
+  - 官网
+  - 安装： pip install djangorestframework
+  - 版本问题： version 3.7是基于1.xx版本的django， 之后版本是基于2.xx版本django
+  - django_filter依赖djangorestframework 3.7
+
+- DRF的主要任务
+
 
 

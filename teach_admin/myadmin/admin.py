@@ -26,7 +26,6 @@ class TeacherAdmin(admin.ModelAdmin):
 	fieldsets = (
 		("基本信息", {"fields":["name",]}),
 		("其他信息", {"fields":["room","course"]}),
-
 		)
 		
 #@admin.site.register(Student)		
