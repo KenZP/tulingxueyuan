@@ -598,6 +598,12 @@ ps:注意点，对ORM的操作分为静态函数和非静态函数两种，静�
   - django_filter依赖djangorestframework 3.7
 
 - DRF的主要任务
+- 案例DRF
+  - django-admin startproject TlxyDRF
+  - python manage.py startapp case1
+  - 配置setting
+  - 配置urls
+  - 创建三个模型： Student， Teacher，ClassRoom
 
 
 
