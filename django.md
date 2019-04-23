@@ -604,6 +604,30 @@ ps:注意点，对ORM的操作分为静态函数和非静态函数两种，静�
   - 配置setting
   - 配置urls
   - 创建三个模型： Student， Teacher，ClassRoom
+  - 创建序列化器
+  - 创建视图集合
+
+  # 序列化
+  - 序列化： 把系统运行中的一些实例等转化成一种可以直接表示出来的格式，用来保存，传输等。
+  - 反序列化： 序列化的反操作
+  # 序列化/发序列化- DRF
+
+  # 实验步骤
+  - 创建project DRF2
+  - 创建app MySet
+  - settings
+  # serializer的类型的参数
+  - read_only: 仅用于序列化输出
+  - write_only:反序列化输入
+  - required： 反序列化时必须输入，默认是True
+  - allow_null： 允许传入None
+  - validators: 使用验证器
+
+  # 创建serializer对象/使用
+  - 构造方法
+         Serializer(instance=None, data=empty, **kargs)
+
+
 
 
 
