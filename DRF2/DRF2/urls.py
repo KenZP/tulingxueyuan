@@ -23,8 +23,12 @@ from MySer import views
 router = routers.SimpleRouter()
 
 router.register(r'student', views.StudentVS,base_name="stu")
+router.register(r'apiview', views.StudentAPIView,base_name="stuapi")
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(router.urls)),
+    url(r'^apiview/', views.StudentAPIView.as_view()),
+    url(r'^Genapiview/', views.StudentGenericAPIView.as_view()),
 ]
+

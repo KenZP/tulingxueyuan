@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c944cfca-464d-4d00-9e4a-2961ae4f63b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DRF2/DRF2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/DRF2/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/DRF2/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/DRF2/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/MySer/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DRF2/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TlxyDRF/case1/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/TlxyDRF/case1/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TlxyDRF/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/TlxyDRF/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF2/DRF2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DRF2/DRF2/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF2/MySer/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/DRF2/MySer/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF2/MySer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DRF2/MySer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/DRF2/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django.md" beforeDir="false" afterPath="$PROJECT_DIR$/django.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,27 +30,27 @@
           <entry key="html" value="357" />
           <entry key="md" value="12" />
           <entry key="py" value="32" />
-          <entry key="txt" value="55" />
+          <entry key="txt" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="357" />
           <entry key="Markdown" value="12" />
-          <entry key="PLAIN_TEXT" value="55" />
+          <entry key="PLAIN_TEXT" value="69" />
           <entry key="Python" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="7" />
-          <entry key="py" value="8" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="7" />
-          <entry key="Python" value="8" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
     </session>
@@ -103,9 +90,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DRF2/MySer/serializers.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DRF2/MySer/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -149,6 +152,7 @@
         <option value="$PROJECT_DIR$/mysite/polls/urls.py" />
         <option value="$PROJECT_DIR$/mysite/polls/templates/polls/index.html" />
         <option value="$PROJECT_DIR$/DRF2/MySer/serializers.py" />
+        <option value="$PROJECT_DIR$/DRF2/MySer/views.py" />
       </list>
     </option>
   </component>
@@ -455,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556004435295</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update django api serializer  study 0423">
+      <created>1556014035994</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1556014035994</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -518,7 +529,8 @@
     <MESSAGE value="update django  admin study 0418" />
     <MESSAGE value="update django  rest framework study 0422" />
     <MESSAGE value="update django document  study 0423" />
-    <option name="LAST_COMMIT_MESSAGE" value="update django document  study 0423" />
+    <MESSAGE value="update django api serializer  study 0423" />
+    <option name="LAST_COMMIT_MESSAGE" value="update django api serializer  study 0423" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tulingxueyuan$match01.coverage" NAME="match01 Coverage Results" MODIFIED="1554990816155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_views" />
@@ -791,7 +803,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DRF2/MySer/serializers.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DRF2/MySer/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
