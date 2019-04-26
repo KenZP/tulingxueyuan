@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css的三种基本选择器</title>
+    <style>
+        /* 这是标签选择器  通过标签来设置元素的样式 */
+        <!--div{-->
+            <!--width:200px;-->
+            <!--height:200px;-->
+            <!--background-color:blue;-->
+        <!--}-->
+        /* 类选择器  通过class类名来设置元素的样式*/
+        .iteml{
+            width:200px;
+            height:200px;
+            background-color:green;
+        }
+
+        .item2{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+        }
+        .bg{
+            background-color:green;
+        }
+        /* id选择器  通过id属性的值来设置元素的样式  影响范围最小*/
+        /*注意 id在html当中具有唯一性，不能重名*/
+        #box1{
+            width:200px;
+            height:200px;
+            background-color:red;
+        }
+        #box2{
+            width:200px;
+            height:200px;
+            /*设置边框*/
+            border:1px solid red;
+        }
+
+        #box3{
+            width:100px;
+            height:100px;
+            background-color:yellow;
+        }
+        /* 注意 基本三种选择器的优先级问题  影响范围越大的选择器优先级越低 id>class>元素选择器  建议大家用class选择器*/
+    </style>
+</head>
+<body>
+    <div class="iteml" id="box3"></div>
+    <div class="item2" class="bg"></div>
+    <div class="item2"></div>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>

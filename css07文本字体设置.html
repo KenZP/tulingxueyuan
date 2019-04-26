@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本字体设置</title>
+    <style>
+        .fonts{
+            /*字体颜色*/
+            /*color:#336699*/
+            /*color:rgb(0,255,255)*/
+            color:rgba(0,0,255,0.5);
+            /*字体大小 设置字体号 font-size
+            谷歌浏览器当中默认字体大小为16px
+            谷歌浏览器最小只能设置为12px 当设置小于12px时  也只能以12px显示*/
+            font-size:30px;
+            /*
+                设置字体 font-family
+                注意：如果你设置的字体用户系统中不存在，会以默认字体显示
+            */
+            font-family:'楷体';
+            /*设置文字是否斜体 font-style:italic*/
+            font-style:italic;
+
+            /*设置粗体 font-weight:bold*/
+            font-weight:bold;
+
+            /*设置行高 line-height*/
+            line-height:50px;
+
+            /*首行缩进 text-indent*/
+            text-indent:60px;
+
+
+
+
+            }
+        a{
+        /*除去元素的下划线*/
+            text-decoration:none;
+        }
+
+        .item2{
+            width:500px;
+            height:200px;
+            background-color:green;
+            /*利用line-height设置单行文本的垂直居中
+            注意 在设置单行文本垂直居中的时候 只给父级元素的高度*/
+            line-height:200px;
+
+            /*设置文本水平对齐  center  right  left*/
+            /*text-align:center;*/
+            text-align:right;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="fonts">
+        蒹葭苍苍，白露为霜。所谓伊人，在水一方。<br>
+        溯洄从之，道阻且长。溯游从之，宛在水中央。<br>
+        蒹葭萋萋，白露未晞。所谓伊人，在水之湄。<br>
+        溯洄从之，道阻且跻。溯游从之，宛在水中坻。<br>
+        蒹葭采采，白露未已。所谓伊人，在水之涘。<br>
+        溯洄从之，道阻且右。溯游从之，宛在水中沚。<br>
+    </div>
+    <div class="item2">
+        蒹葭苍苍，白露为霜。所谓伊人，在水一方。<br>
+    </div>
+    <a href="http://www.baidu.com">百度</a>
+</body>
+</html>

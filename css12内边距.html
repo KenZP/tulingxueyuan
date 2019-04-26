@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css的内边距</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background:green;
+            border:1px solid red;
+            /*
+                设置元素的内间距 让内容和元素的边距有一定的距离
+                注意： 在使用padding的时候 会改变元素的实际大小
+            */
+            padding-top:30px;
+            padding-left:30px;
+            padding-bottom:30px;
+            padding-right:30px;
+            /* padding设置四个指的时候
+                第一个值代表元素顶部的内间距
+                第二个值代表元素右边的内间距
+                第三个值代表元素底部的内间距
+                第四个值代表元素左边的内间距
+            */
+            padding:60px 60px 60px 60px;
+            /*
+                padding设置两个值的时候
+                    第一个值代表上下对边间距
+                    第二个值代表左右对边间距
+            */
+            padding:60px 60px;
+            /* padding设置一个值的时候， 代表四个边的间距*/
+            padding:60px;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <!--内边距： 指的是元素距离元素内部元素的间距-->
+    <div>你好</div>
+</body>
+</html>
