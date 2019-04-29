@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+    	div{
+    		width: 1200px;
+    		height: 100px;
+    		background: green;
+    	}
+    	/*当浏览器窗口小于等于960时*/
+    	@media (max-width: :960px){
+    		div{
+    			background: red;
+    		}
+
+
+    	}
+    	/*当浏览器窗口小于等于640时*/
+    	@media (max-width: 640px){
+    		div{
+    			background: blue;
+    		}
+
+    	}
+    	/*当浏览器窗口大于等于960时*/
+    	@media (min-width: 960px){
+    		div{
+    			background: #000;
+    		}
+
+    	}
+    </style>
+</head>
+<body>
+	<div>这是内容</div>
+    
+</body>
+</html>

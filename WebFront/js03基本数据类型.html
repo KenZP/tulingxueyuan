@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js基本使用类型</title>
+</head>
+<body>
+	<script>
+		//布尔类型 只有两个值 true和false
+		var B = true;//js中布尔值全是小写
+		var B = false;
+		//alert(B);
+		//将结果打印到控制台
+		console.log(typeof(B));
+		//数值类型 包含整数 小数 二进制 八进制 十六进制 NaN
+		var num = 12;
+		var num = 12.1;
+		var num = 0b11;//二进制 是以0b开头
+		var num = 013;//八进制  以0开头  取值为0-7
+		var num = 0xf; //十六进制  以0x开头  取值为0-9  a-f
+		var num = NaN;//Not a number 不是数
+		console.log(num,typeof(num));
+
+		//字符串类型  只要是用单引号或者双引号引起来的字符  都是字符串类型
+		//注意  单双引号可以嵌套使用
+		var str = '123';
+		var str = "true";
+		var str = "I love 'wang'";
+		var str = 'I love "wang"';
+		console.log(str,typeof(str));
+		//对象类型  包含 对象 数组 null
+		var obj = {name:'zhangsan',age:18};//对象
+		var list = [1,2,3,4];//数组
+		var obj1 = null;
+		console.log(obj,typeof(obj));
+		console.log(list,typeof(list));
+		console.log(obj1,typeof(obj1));
+
+		//函数数据类型  function
+		var Func=function(){
+			console.log('这是一个函数')
+		}
+
+		console.log(Func,typeof(Func));
+
+		//undefined 未定义  当我们定义一个变量不给值的时候，它的类型就是undefined类型
+		var un;
+		console.log(un,typeof(un));
+
+	</script>
+    
+</body>
+</html>

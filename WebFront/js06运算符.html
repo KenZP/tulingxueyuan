@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js运算符</title>
+</head>
+<body>
+    <script>
+    	//++ 自增1  每次加1 结果赋值给自己
+    	var a = 1;
+    	a++
+    	//a+=1;
+    	console.log(a);
+    	//-- 自减1  每次只在原来基础上减去1  结果赋值给自己
+    	a--;
+    	//a-=1
+    	console.log(a);
+
+    	//+ 字符串连接  当两边的值都为数值类型时做算术运算
+    	//  			当两边的值有一个为字符串的时候就做字符串连接
+    	var str = '1' + 1 + 2;//会输出112
+    	var str = 1 + 1 +'2';//会输出22
+    	console.log(str);
+
+    	//=== 全等 在比较时 两边除了值相等  类型也必须相同
+    	var B = 1 == 1;//true
+    	var B = 1 == '1';//true  系统帮我们做了数据类型转换
+    	var B = 1===1;// true
+    	var B = 1==='1'//false
+    	console.log(B);
+    </script>
+</body>
+</html>
