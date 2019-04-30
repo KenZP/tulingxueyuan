@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机数</title>
+</head>
+<body>
+<script>
+    //随机数 random 取0-1之间的随机数  但是永远取不到0
+    var res = Math.random();
+    console.log(res);
+
+    //取0-10之间的随机数
+    var res1 =Math.random()*10;
+    console.log(res1);
+
+    //取0-10之间的随机整数
+    var res2 = Math.floor(Math.random()*11);
+    console.log(res2);
+
+    //取指定范围之间的随机整数   5-10
+    //（10-5+1）  （10-5）
+    var res3 = Math.floor(Math.random()*6) + 5;
+    console.log(res3);
+    //取指定数值之间的随机整数  公式如下：
+    function rand(m,n) {
+       return Math.floor(Math.random()*(n-m+1))+(n-m);
+    }
+
+    var res4 = rand(10,20);
+    console.log(res4);
+
+
+</script>
+</body>
+</html>

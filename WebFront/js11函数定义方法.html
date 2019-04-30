@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js中函数定义方法</title>
+</head>
+<body>
+<script>
+    //1.使用function关键字来定义函数
+    //函数不调用是不执行的
+    function demo() {
+        alert('函数被调用了');
+    };
+    //调用函数
+    demo();
+
+    //2. 在表达式当中定义函数(称为匿名函数)
+    //      函数只能在函数体下方调用
+    var demo1 =function(){
+        alert('这是匿名函数');
+    };
+    console.log(demo1);
+    demo1();
+</script>
+</body>
+</html>

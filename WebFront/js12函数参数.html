@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js函数参数问题</title>
+</head>
+<body>
+<script>
+    /*
+        在函数调用的时候  不传实参 函数以然可以执行  形参返回undifined
+        多传实参  多余的参数会被忽略
+        在函数内部可以通过arguments这个属性获取所有传进来的参数 类型是数组类型
+
+    */
+    function demo(a,b) {
+        console.log('函数被调用了');
+        console.log(arguments);
+        for (i in arguments) {
+            console.log(arguments[i]);
+        }
+        console.log(a,b);
+    }
+    demo(2,3);
+
+</script>
+</body>
+</html>
