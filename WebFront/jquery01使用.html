@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery使用</title>
+    <style>
+        #item1{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+<!--  引用jquery库文件  -->
+    <script src="./jquery.min.js"></script>
+</head>
+<body>
+    <div id="item1" class="item">jQuery选择器的使用</div>
+    <ul>
+        <li class="box1">1</li>
+        <li class="box2">2</li>
+        <li class="box3">3</li>
+    </ul>
+<script>
+    //检测jQuery库文件是否导入成功
+    //console.log($);
+    //通过ID类获取元素对象
+    console.log($('item1'));
+    //通过标签来获取元素对象
+    console.log($('div'));
+    //通过类来获取元素对象
+    console.log($('.item'));
+    //查找页面中哪个中的第一个元素
+    console.log($('li:first'));
+    //获取页面当中最后一个li元素
+    console.log($('li:last'));
+    //获取页面当中指定的li元素 eq(索引值)  索引值从0开始
+    console.log($('li:eq(0)'));
+    console.log($('li').eq(0));//推荐使用这种写法
+
+    //通过元素内的字符来查找元素
+    console.log($('li:contains(2)'));
+    //通过指定元素的指定属性来查找元素
+    console.log($('li[class=box3]'))
+
+</script>
+</body>
+</html>

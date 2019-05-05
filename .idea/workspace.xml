@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c944cfca-464d-4d00-9e4a-2961ae4f63b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebFront/js09定时器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/js10定时器动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/js11函数定义方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/js12函数参数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/js13变量作用域.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/js14对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/js15数组.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/js16数学对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/js17随机数.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tulingxueyuan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tulingxueyuan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront/jQuery02父子级关系选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront/jQuery03样式操作.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront/jQuery04类名操作.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront/jQuery06获取相关尺寸.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront/jQuery07事件绑定.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront/jquery01使用.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront/css01语法.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/css01语法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront/js09定时器.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/js09定时器.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,28 +35,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront/js09定时器.html">
+        <entry file="file://$PROJECT_DIR$/WebFront/jQuery06获取相关尺寸.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="507">
+              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront/js14对象.html">
+        <entry file="file://$PROJECT_DIR$/WebFront/jQuery07事件绑定.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+            <state relative-caret-position="375">
+              <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebFront/js15数组.html">
+        <entry file="file://$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+            <state relative-caret-position="374">
+              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -81,14 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html学习笔记03_行级标签.html" />
-        <option value="$PROJECT_DIR$/html03行级标签.html" />
-        <option value="$PROJECT_DIR$/html04表单标签.html" />
-        <option value="$PROJECT_DIR$/1.css" />
-        <option value="$PROJECT_DIR$/css01笔记.html" />
-        <option value="$PROJECT_DIR$/css02选择器.html" />
-        <option value="$PROJECT_DIR$/css03层级选择器.html" />
-        <option value="$PROJECT_DIR$/css04并列选择器.html" />
         <option value="$PROJECT_DIR$/css05伪类选择器.html" />
         <option value="$PROJECT_DIR$/css.html" />
         <option value="$PROJECT_DIR$/css06颜色的表示方法.html" />
@@ -123,7 +114,6 @@
         <option value="$PROJECT_DIR$/WebFront/css01语法.html" />
         <option value="$PROJECT_DIR$/ajax.py" />
         <option value="$PROJECT_DIR$/mailv03.py" />
-        <option value="$PROJECT_DIR$/WebFront/js09定时器.html" />
         <option value="$PROJECT_DIR$/WebFront/js10定时器动画.html" />
         <option value="$PROJECT_DIR$/WebFront/js11函数定义方法.html" />
         <option value="$PROJECT_DIR$/WebFront/js12函数参数.html" />
@@ -132,6 +122,15 @@
         <option value="$PROJECT_DIR$/WebFront/js15数组.html" />
         <option value="$PROJECT_DIR$/WebFront/js16数学对象.html" />
         <option value="$PROJECT_DIR$/WebFront/js17随机数.html" />
+        <option value="$PROJECT_DIR$/WebFront/js09定时器.html" />
+        <option value="$PROJECT_DIR$/WebFront/jQuery02父子级关系选择器.html" />
+        <option value="$PROJECT_DIR$/WebFront/jQuery03样式操作.html" />
+        <option value="$PROJECT_DIR$/WebFront/jQuery04类名操作.html" />
+        <option value="$PROJECT_DIR$/WebFront/jquery01使用.html" />
+        <option value="$PROJECT_DIR$/WebFront/jQuery文本操作.html" />
+        <option value="$PROJECT_DIR$/WebFront/jQuery06获取相关尺寸.html" />
+        <option value="$PROJECT_DIR$/WebFront/jQuery07事件绑定.html" />
+        <option value="$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html" />
       </list>
     </option>
   </component>
@@ -281,7 +280,7 @@
       <workItem from="1554986899514" duration="25000" />
       <workItem from="1554990323660" duration="267000" />
       <workItem from="1554990602931" duration="285000" />
-      <workItem from="1556588595792" duration="13092000" />
+      <workItem from="1556588595792" duration="25409000" />
     </task>
     <task id="LOCAL-00001" summary="update from pycharm">
       <created>1554714091752</created>
@@ -465,11 +464,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556526596341</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update js study 0430">
+      <created>1556609830524</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1556609830524</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14351000" />
+    <option name="totallyTimeSpent" value="26668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -532,20 +538,13 @@
     <MESSAGE value="update  CSS study 0426" />
     <MESSAGE value="update  file struct" />
     <MESSAGE value="update  css and js study 0429" />
-    <option name="LAST_COMMIT_MESSAGE" value="update  css and js study 0429" />
+    <MESSAGE value="update js study 0430" />
+    <option name="LAST_COMMIT_MESSAGE" value="update js study 0430" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tulingxueyuan$match01.coverage" NAME="match01 Coverage Results" MODIFIED="1554990816155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_views" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css06颜色的表示方法.html" />
-    <entry file="file://$PROJECT_DIR$/html01.html" />
-    <entry file="file://$PROJECT_DIR$/css07文本字体设置.html" />
-    <entry file="file://$PROJECT_DIR$/css08边框设置.html" />
-    <entry file="file://$PROJECT_DIR$/css09边框圆角设置.html" />
-    <entry file="file://$PROJECT_DIR$/css10边框阴影效果.html" />
-    <entry file="file://$PROJECT_DIR$/css11背景样式设置.html" />
-    <entry file="file://$PROJECT_DIR$/css12内边距.html" />
     <entry file="file://$PROJECT_DIR$/css13外间距.html" />
     <entry file="file://$PROJECT_DIR$/css14盒子模型.html" />
     <entry file="file://$PROJECT_DIR$/html03行级标签.html" />
@@ -744,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront/js09定时器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebFront/js10定时器动画.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -779,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront/js14对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebFront/js16数学对象.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
@@ -804,6 +789,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/js14对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/js09定时器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/jQuery04类名操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/jQuery03样式操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/jQuery02父子级关系选择器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/jquery01使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/jQuery文本操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/jQuery06获取相关尺寸.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/jQuery07事件绑定.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>

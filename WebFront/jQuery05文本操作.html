@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本操作</title>
+    <script src="./jquery.min.js"></script>
+    <style>
+        .item1{
+            width: 200px;
+            height: 200px;
+            background: #558899;
+        }
+    </style>
+</head>
+<body>
+    <div class="item1">123</div>
+    <script>
+        //文本操作
+        $('div').html('<span>897867</span>');//html方法可以解析标签
+        $('div').text('345');//text方法不能解析标签   一般用来获取文本
+    </script>
+</body>
+</html>

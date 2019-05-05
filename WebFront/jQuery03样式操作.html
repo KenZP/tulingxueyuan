@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用jQuery操作元素样式</title>
+    <script src="./jquery.min.js"></script>
+</head>
+<body>
+    <div class="item1" id="item1"></div>
+    <script>
+        //检查jquery是否导入成功
+        //alert($);
+        //操作元素样式
+            //1. 先获取元素对象
+            //设置元素样式
+            $('.item1').css({width:'100px',height:'100px',border:'1px solid red'});
+
+            //获取元素样式  获取到的是带单位的字符串
+            console.log($('.item1').css('width'));
+
+    </script>
+</body>
+</html>
