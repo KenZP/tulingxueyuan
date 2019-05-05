@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c944cfca-464d-4d00-9e4a-2961ae4f63b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebFront/jQuery02父子级关系选择器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/jQuery03样式操作.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/jQuery04类名操作.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/jQuery06获取相关尺寸.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/jQuery07事件绑定.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/jquery01使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront/js09定时器.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/js09定时器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="308">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -280,7 +272,7 @@
       <workItem from="1554986899514" duration="25000" />
       <workItem from="1554990323660" duration="267000" />
       <workItem from="1554990602931" duration="285000" />
-      <workItem from="1556588595792" duration="25409000" />
+      <workItem from="1556588595792" duration="25660000" />
     </task>
     <task id="LOCAL-00001" summary="update from pycharm">
       <created>1554714091752</created>
@@ -471,11 +463,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556609830524</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="update jQuery study 0505">
+      <created>1557048442507</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1557048442507</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26668000" />
+    <option name="totallyTimeSpent" value="26919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -539,7 +538,8 @@
     <MESSAGE value="update  file struct" />
     <MESSAGE value="update  css and js study 0429" />
     <MESSAGE value="update js study 0430" />
-    <option name="LAST_COMMIT_MESSAGE" value="update js study 0430" />
+    <MESSAGE value="update jQuery study 0505" />
+    <option name="LAST_COMMIT_MESSAGE" value="update jQuery study 0505" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tulingxueyuan$match01.coverage" NAME="match01 Coverage Results" MODIFIED="1554990816155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_views" />
@@ -860,8 +860,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront/jQuery08动态绑定事件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="308">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
