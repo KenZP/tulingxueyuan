@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘事件实例</title>
+    <script src="./jquery.min.js"></script>
+    <style>
+        *{margin: 0;padding: 0}
+        div{
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<!--    当按下wasd键时  控制页面的元素对应的上下左右移动-->
+    <div></div>
+    <script>
+        var L=0;
+        var T=0;
+        $(window).keydown(function (e) {
+            console.log(e.keyCode);
+            var stp=e.keyCode;
+            //定义步长
+            //判断当前按下的是那个键
+            if (stp==65){
+                //按下了a键 左移动
+                //设置一次移动多少
+                L-=5;
+                $('div').css('left',L+'px');
+            }else if (stp==83){
+                //按下了s  元素向下移动
+                T+=5;
+                $('div').css('top',T+'px');
+            } else if (stp==68){
+                //按下了d  向右移动
+                L+=5;
+                $('div').css('left',L+'px');
+            } else if (stp==87){
+                //按下了w 向上移动
+                T-=5;
+                $('div').css('top',T+'px');
+            }
+
+        });
+    </script>
+</body>
+</html>

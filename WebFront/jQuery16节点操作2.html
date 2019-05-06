@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点操作</title>
+    <script src="./jquery.min.js"></script>
+    <style>
+        *{margin:0;padding: 0}
+        .wrap{
+            width: 800px;
+            height: 600px;
+            border: 1px solid red;
+        }
+
+        .item{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            border-radius: 50%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <button>在元素内部的尾部插入元素</button>
+    <button>在元素内部的前面插入元素</button>
+    <div class="wrap"></div>
+    <script>
+        //绑定事件
+        //在元素内部的尾部插入元素
+        $('button').eq(0).click(function () {
+            //新建一个元素
+            var oDiv=$('<div class="item"></div>');
+            oDiv.css({'background':'rgb('+rund(0,255)+','+rund(0,255)+','+rund(0,255)+')'});
+            //通过append()  appendTo()方法 插入一个新的元素
+                //在元素内部的尾部插入一个元素
+                $('.wrap').append(oDiv);
+                oDiv.appendTo($('.wrap'));//将新的元素插入到指定的元素中
+        });
+
+        //绑定事件
+        $('button').eq(1).click(function () {
+            //调用创建新元素的函数
+            var oDiv=createDiv();
+            //通过prepend()  prependTo()方法 插入一个新的元素
+                $('.wrap').prepend(oDiv);//在指定元素的最前面插入新建的元素
+                oDiv.prependTo($('.wrap'));//将新的元素插入到指定的元素的最前面
+        });
+        
+        //定义随机函数 0-255
+        function rund(m,n) {
+            return  Math.floor(Math.random()*(n-m+1))+m;
+        }
+        
+        //定义创建新元素的函数
+        
+        function createDiv() {
+            //新建一个元素
+            var oDiv=$('<div class="item"></div>');
+            oDiv.css({'background':'rgb('+rund(0,255)+','+rund(0,255)+','+rund(0,255)+')'});
+            return oDiv;
+        }
+    </script>
+</body>
+</html>

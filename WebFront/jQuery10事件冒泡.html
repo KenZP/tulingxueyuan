@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件冒泡</title>
+    <script src="./jquery.min.js"></script>
+    <style>
+        .item1{
+            width: 300px;
+            height: 300px;
+            background: pink;
+        }
+        .item2{
+            width: 200px;
+            height: 200px;
+            background: red;
+
+        }
+
+        .item3{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="item1">
+        <div class="item2">
+            <div class="item3">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        //事件冒泡：  当触发一个元素的事件时  会触发它的父级和先辈级同类型的事件 造成页面的混乱
+        // 如何解决: 添加return false
+        $('.item1').click(function () {
+            $('.item1').css({background:'black'});
+            return false;
+        });
+        $('.item2').click(function () {
+            $('.item2').css({background:'black'});
+            return false;
+        });
+        $('.item3').click(function () {
+            $('.item3').css({background:'black'});
+            return false;
+        });
+    </script>
+</body>
+</html>

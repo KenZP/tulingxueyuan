@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点操作</title>
+    <script src="./jquery.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //创建节点
+        var oDiv=$('<div>这是新创建的元素节点</div>');
+
+        //添加节点
+        $('body').append(oDiv);
+    </script>
+</body>
+</html>
