@@ -24,6 +24,12 @@
 <body>
     <button>在元素内部的尾部插入元素</button>
     <button>在元素内部的前面插入元素</button>
+    <button>在元素外部的后部插入元素</button>
+    <button>在元素外部的前面插入元素</button>
+    <button>删除节点</button>
+    <button>清空元素</button>
+    <button>克隆</button>
+    <button>节点操作注意事项</button>
     <div class="wrap"></div>
     <script>
         //绑定事件
@@ -46,14 +52,59 @@
                 $('.wrap').prepend(oDiv);//在指定元素的最前面插入新建的元素
                 oDiv.prependTo($('.wrap'));//将新的元素插入到指定的元素的最前面
         });
-        
+
+        //在元素外部的后面插入元素  after  和insertAfter
+        $('button').eq(2).click(function () {
+            //调用新建元素函数
+            var oDiv = createDiv();
+            $('.wrap').after(oDiv);//在指定元素外部后面插入新元素
+            oDiv.insertAfter($('.wrap'));//将新建的元素插入到指定元素外部的后面
+        });
+
+        //在元素外部的前面插入元素
+        $('button').eq(3).click(function () {
+            var oDiv=createDiv();
+            $('.wrap').before(oDiv);//在指定元素外部的前面插入新元素
+            oDiv.insertBefore($('.wrap'));//将新建的元素插入指定元素外部的前面
+        });
+
+        //删除节点
+        $('button').eq(4).click(function () {
+            $('.wrap').remove();
+            $('body').remove();//可以删除自己
+        });
+        //清空元素
+        $('button').eq(5).click(function () {
+            $('.wrap').empty();//只是清空指定元素内部的元素节点  不会把自己删除
+        });
+
+        //克隆元素
+        $('button').eq(6).click(function () {
+            //克隆元素
+                //注意  如果单纯的只是克隆元素，不需要传参数
+                    //  如果要连同元素上的事件一起克隆  需要传入参数true
+            var newBtn=$('button').eq(6).clone(true);
+            //将克隆的元素插入到wrap元素外部的前面
+            $('.wrap').before(newBtn);
+        });
+
+        //节点操作注意事项
+        //在插入元素的时候  如果不是新元素   要先进行克隆在进行插入操作   不然会把原来的元素拿走
+        $('button').eq(7).click(function () {
+            //将第一个按钮添加到wrap元素里
+            //$('.wrap').append($('button').eq(0));
+            //先克隆在插入
+            $('.wrap').append($('button').eq(0).clone());
+        });
+
+
+
         //定义随机函数 0-255
         function rund(m,n) {
             return  Math.floor(Math.random()*(n-m+1))+m;
         }
         
         //定义创建新元素的函数
-        
         function createDiv() {
             //新建一个元素
             var oDiv=$('<div class="item"></div>');
