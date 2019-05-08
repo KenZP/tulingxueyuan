@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c944cfca-464d-4d00-9e4a-2961ae4f63b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebFront/Ajax/ajax复习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/bootstrap/bootstrap复习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue01介绍.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue02模板语法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue03文本指令.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue04属性操作.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue05样式操作.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue06_v-model.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue07_v-for.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue08_v-if.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue09_v-on事件绑定.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue10案例.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue11过滤器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue12计算属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue13计算属性1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebFront/vue14侦听属性.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/bootstrap-3.3.7-dist.zip" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/bootstrap-3.3.7-dist.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront/bootstrap/js/npm.js" afterDir="false" />
-    </list>
+    <list default="true" id="c944cfca-464d-4d00-9e4a-2961ae4f63b0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebFront/vue10案例.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="177">
+              <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -370,7 +332,7 @@
       <workItem from="1554990323660" duration="267000" />
       <workItem from="1554990602931" duration="285000" />
       <workItem from="1556588595792" duration="46509000" />
-      <workItem from="1557209029380" duration="21096000" />
+      <workItem from="1557209029380" duration="21145000" />
     </task>
     <task id="LOCAL-00001" summary="update from pycharm">
       <created>1554714091752</created>
@@ -589,11 +551,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557217946061</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update vue study 0508">
+      <created>1557298621471</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1557298621471</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68864000" />
+    <option name="totallyTimeSpent" value="68913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -659,7 +628,8 @@
     <MESSAGE value="update jQuery study 0505" />
     <MESSAGE value="update jQuery study 0506" />
     <MESSAGE value="update ajax and bootstrap study 0507" />
-    <option name="LAST_COMMIT_MESSAGE" value="update ajax and bootstrap study 0507" />
+    <MESSAGE value="update vue study 0508" />
+    <option name="LAST_COMMIT_MESSAGE" value="update vue study 0508" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tulingxueyuan$match01.coverage" NAME="match01 Coverage Results" MODIFIED="1554990816155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_views" />
@@ -1042,8 +1012,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront/vue10案例.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="177">
+          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
         </state>
       </provider>
     </entry>
