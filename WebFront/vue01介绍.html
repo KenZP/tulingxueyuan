@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue介绍</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+<!--
+vue is:
+    是一个类似于jquery的js库(框架)
+    MVVM:
+       M  model: 模型  数据类型
+       V  view: 视图
+       VM  viewmodel:视图数据模型的实例
+
+       挂载点： div#app
+            注意： vue只处理挂在点的内容
+       模板：挂载点里面的内容称为模板
+       实例：new Vue()
+             自动结合模板和数据， 生成内容  将生成的内容发到挂载点
+
+       实现双向数据绑定：
+            当model当中的数据发生变化，view数据也会同步发生变化
+            当view当中的数据发生变化时， model当中的数据也会同步发生变化。
+       模板语法：
+       {{}}
+       可以写数值类型  对象  数组  字符串  简单运算
+       不能写表达式
+
+       文本指令：
+       以v-开头   对html元素的功能扩展
+       v-html  可以解析标签
+       v-text  不能解析标签
+
+       属性操作
+        v-bind
+-->
+    <!--  1. 创建容器-->
+    <div id="app">
+        {{msg}}
+    </div>
+    <script>
+        //2.创建vue实例
+        var VM=new Vue({
+            el:'#app',
+            data:{
+                msg:'你好'
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+    <script src="./vue.js"></script>
+    <style>
+        .box1{
+
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--        原生JS写法-->
+        <button onclick="alert('ok')">点我</button>
+        <!--   vue写法     -->
+        <button v-on:click="al">单击我</button>
+        <button v-on:dblclick="al">双击我</button>
+        <!--  简写方法  @      -->
+        <input type="text" @keydown.49="kdown">
+
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'ok'
+
+            },
+            methods:{
+                al:function () {
+                    alert(this.msg)
+                },
+                kdown:function (e) {
+                    //alert('你按下了键盘')
+                    //console.log(e.keyCode)
+                    console.log('你按下了1')
+                }
+            }
+        })
+    </script>
+</body>
+</html>

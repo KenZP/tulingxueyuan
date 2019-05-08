@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性操作</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <!--
+        属性操作
+        v-bind: 属性名=""
+        简写：  ：属性名=""
+    -->
+    <div id="app">
+        <a v-bind:href="url" v-bind:title="msg">百度</a>
+        <br>
+        <a :href="url">jd</a>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                url:'http://www.baidu.com',
+                msg:'我是百度'
+            }
+        })
+    </script>
+</body>
+</html>

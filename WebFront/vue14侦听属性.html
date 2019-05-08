@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>侦听属性</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	<!--
+		 侦听属性
+
+		 使用watch
+		 watch:{
+					fullname:function(){
+						this.num++
+					}
+				}
+	 -->
+	<div id="app">
+		<input type="text" v-model="firstName">
+		<input type="text" v-model="lastName">
+		<br>
+		{{fullname}}
+		<br>
+		{{num}}
+		<script>
+			new Vue({
+				el:'#app',
+				data:{
+					firstName:'',
+					lastName:'',
+					num:0
+				},
+				computed:{
+					fullname:function(){
+						return this.firstName+this.lastName
+					}
+				},
+				watch:{
+					fullname:function(){
+						this.num++
+					}
+				}
+			})
+		</script>
+	</div>
+</body>
+</html>

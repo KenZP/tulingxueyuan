@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="i in arr">{{i}}</li>
+        </ul>
+        <ul>
+            <li v-for="(v,index) in arr" :key="index">{{v}}---->{{index}}</li>
+        </ul>
+        <ul>
+            <li v-for="(v,key,index) in obj">{{key}}---->{{v}}---->{{index}}</li>
+        </ul>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                arr:['铅笔','钢笔','圆珠笔','签字笔'],
+                obj:{
+                    name:'张三',
+                    sex:'1',
+                    len:'180cm'
+                }
+
+        }
+        })
+    </script>
+</body>
+</html>

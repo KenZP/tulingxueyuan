@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue模板语法</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <!-- 模板语法：
+       {{}}
+       可以写数值类型  对象  数组  字符串  简单运算
+       不能写表达式-->
+    <div id="app">
+        <p>{{msg}}</p>
+        <p>{{str}}</p>
+        <p>{{obj}}</p>
+        <p>{{arr}}</p>
+        <p>{{1+1}}</p>
+        <p>{{ 1>0?'判断成功': '判断失败'}}</p>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                msg:12,
+                str:'123',
+                obj:{name:'张三'},
+                arr:['a','b','c']
+            }
+        })
+    </script>
+</body>
+</html>

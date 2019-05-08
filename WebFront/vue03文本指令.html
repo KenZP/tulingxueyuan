@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本指令</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <!--    文本指令：
+           以v-开头   对html元素的功能扩展
+           v-html  可以解析标签
+           v-text  不能解析标签
+    -->
+    <div id="app">
+        <p v-html="msg"></p>
+        <p v-text="msg"></p>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'<h1>你好</h1>'
+            }
+        })
+    </script>
+</body>
+</html>

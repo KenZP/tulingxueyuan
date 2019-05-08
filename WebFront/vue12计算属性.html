@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算属性</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	<!--
+		计算属性： 
+			computed:{
+				属性:function(){
+					return ...
+				}
+			}
+		计算属性和方法的区别：计算属性有缓存机制，当我们依赖的值没有发生变化时，直接调用上次缓存的结果
+							方法没调用一次 无论依赖的值是否变化 都要执行一次	
+
+		完整的计算属性使用
+		computed:{
+	 			b:{
+	 				get:function(){
+	 					//默认调用get属性
+	 					return parseInt(this.a)+1
+	 				},
+	 				set:function(val){
+	 					//当设置b属性时自动触发set
+	 					return this.a = value
+	 				}
+	 			}
+	 		}
+	 -->
+	 <div id="app">
+	 	<!-- 当a发生变化时  输出a+1 -->
+	 	<input type="text" v-model="a">
+	 	{{b}}
+	 	{{c()}}
+	 </div>
+	 <script>
+	 	new Vue({
+	 		el:'#app',
+	 		data:{
+	 			a:1,
+	 		},
+	 		computed:{
+	 			b:function() {
+	 				//业务逻辑
+	 				return parseInt(this.a)+1
+	 			}
+	 		},
+	 		methods:{
+	 			c:function(){
+	 				return parseInt(this.a)+1
+	 			}
+	 		}
+	 	})
+	 </script>
+</body>
+</html>

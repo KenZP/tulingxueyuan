@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue过滤器</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	<!-- 
+		过滤器
+			2.0版本取消了一千版本中设置的过滤器
+			格式：{{'hello'|过滤器的名字}}
+
+			在vue实例当中使用filters
+			filters{
+				过滤器名字:function(val){
+					return ...
+				}
+			}	
+	 -->
+	<div id="app">
+		{{msg}}
+		{{msg|copitalize}}
+		<br>
+		{{price}}
+		{{price|currency}}
+	</div>
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+				msg:'hello',
+				price:20
+			},
+			filters:{
+				copitalize:function(val){
+					return val.charAt(0).toUpperCase()+val.slice(1)
+				},
+				currency:function(val) {
+					return '￥'+val
+				}
+
+			}
+		})
+	</script>
+</body>
+</html>

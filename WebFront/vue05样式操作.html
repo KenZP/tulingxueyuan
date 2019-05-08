@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式操作</title>
+    <script src="./vue.js"></script>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .box2{
+            border: 3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        类名的操作
+            数组语法
+                v-bind:class="[变量名，变量名]"
+                data:{
+                    变量名：类名
+                }
+
+            对象语法
+                v-bind:class={类名：true/false}
+
+        style的操作
+            数组语法：
+                :style=[obj1,obj2]
+                data:{
+                    obj1:{
+                        width:'200px',
+                        height:'200px',
+                        background:'red'
+                    },
+
+                    obj2:{
+                       border:'5px solid green'
+                    }
+
+                }
+
+            对象语法：
+                ：style={width:w,height:h}
+                data:{
+                    w:'200px',
+                    h:'200px'
+                }
+    -->
+    <div id="app">
+        <div :class="[a,b]"></div>
+        <div :class={box1:flag,box2:flag}>2</div>
+        <div v-bind:style={width:'200px',height:'200px',background:'red'}>4</div>
+         <div v-bind:style={width:w,height:h,background:bg}>5</div>
+        <div v-bind:style="json">6</div>
+        <div v-bind:style="[json,b]">7</div>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                a:'box1',
+                b:'box2',
+                flag:true,
+                w:'200px',
+                h:'200px',
+                bg:'red',
+                json:{
+                    width:'200px',
+                    height:'200px',
+                    background:'red'
+                },
+                b:{
+                    border:'5px solid green'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
